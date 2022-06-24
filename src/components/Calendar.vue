@@ -1,10 +1,10 @@
 <template>
 <v-row class="fill-height">
     <v-col>
-        <v-sheet height="64">
-            <v-toolbar
-                flat
-            >
+    <v-sheet height="64">
+        <v-toolbar
+            flat
+        >
             <v-btn
                 outlined
                 class="mr-4"
@@ -21,7 +21,7 @@
                 @click="prev"
             >
                 <v-icon small>
-                  mdi-chevron-left
+                    mdi-chevron-left
                 </v-icon>
             </v-btn>
             <v-btn
@@ -44,17 +44,17 @@
                 right
             >
                 <template v-slot:activator="{ on, attrs }">
-                <v-btn
-                    outlined
-                    color="grey darken-2"
-                    v-bind="attrs"
-                    v-on="on"
-                >
-                    <span>{{ typeToLabel[type] }}</span>
-                    <v-icon right>
-                      mdi-menu-down
-                    </v-icon>
-                </v-btn>
+                    <v-btn
+                        outlined
+                        color="grey darken-2"
+                        v-bind="attrs"
+                        v-on="on"
+                    >
+                        <span>{{ typeToLabel[type] }}</span>
+                        <v-icon right>
+                            mdi-menu-down
+                        </v-icon>
+                    </v-btn>
                 </template>
                 <v-list>
                     <v-list-item @click="type = 'day'">
